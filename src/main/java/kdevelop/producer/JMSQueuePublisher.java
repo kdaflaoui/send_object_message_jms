@@ -43,7 +43,7 @@ public class JMSQueuePublisher  {
         messageProducer.send(objectMessage);
         System.out.println("The message has been sent");
     }
-
+    //close the connection
     public void close() throws Exception{
        try {
            connection.close();

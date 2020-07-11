@@ -45,7 +45,7 @@ public class JMSQueueSubscriber implements MessageListener {
             e.printStackTrace();
         }
     }
-
+    //close the connection
     public void close() throws Exception{
         try {
             connection.close();
